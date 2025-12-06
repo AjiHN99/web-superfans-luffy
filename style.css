@@ -12,7 +12,7 @@ body {
 .container {
     background-color: aliceblue;
     margin: auto;
-    width: 800px;
+    width: 960px;
 }
 
 header {
@@ -47,23 +47,27 @@ header a:hover {
     
 }
 
-img {
+.hero-img {
     border-bottom: -1px solid #d9302e;
     border-top: 3px solid #FC2600;
-    width: 100%;
+    width: 960px;
+    height: auto;
     box-shadow: 0 2px 20px 0 black;
 }
 
-#content {
+.main {
+    width: 600px;
     padding: 20px;
+    box-sizing: border-box;
+    float: left;
 }
-#content h2 {
+.main h2 {
     margin-top: 20px;
     font-weight: bold;
     margin-bottom: 3px;
 }
-#content p {
-    font-size: 14px;
+.main p {
+    font-size: 15px;
 }
 
 span {
@@ -74,6 +78,26 @@ span a {
     text-decoration: none;
 }
 
+.sidebar {
+    width: 300px;
+    float: right;
+    margin-top: 40px;
+    margin-left: 10px;
+    
+}
+.sidebar h3 {
+    font-size: medium;
+}
+.sidebar img {
+    width: 75px;
+    height: auto;
+    margin-left: 23px;
+    float: left;
+}
+.sidebar p {
+    font-size: 13px;
+}
+
 footer {
     background-color: black;
     color: white;
@@ -82,3 +106,18 @@ footer {
 }
 
 
+/* clearfix : menghapus float */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+.cf {
+    *zoom: 1;
+}
