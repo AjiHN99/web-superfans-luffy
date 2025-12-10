@@ -9,10 +9,30 @@ body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/diagonal-squares.png);
 }
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: white;
+}
 .container {
     background-color: aliceblue;
-    margin: auto;
+    margin: 80px auto;
     width: 960px;
+    position: relative;
+}
+.google {
+    width: 100px;
+    height: 100px;
+    background-image: url(src/image.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -9999px;
+    position: absolute;
+    right: 191px;
+    
 }
 
 header {
@@ -91,11 +111,12 @@ span a {
 .sidebar img {
     width: 75px;
     height: auto;
-    margin-left: 23px;
+    margin-left: 10px;
     float: left;
 }
 .sidebar p {
     font-size: 13px;
+    padding-right: 15px;
 }
 
 footer {
